@@ -6,31 +6,37 @@
 /*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 14:18:33 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/22 09:45:35 by gpilet           ###   ########.fr       */
+/*   Updated: 2024/07/22 14:39:08 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	a_c(int str)
+{
+	if (str >= 'A' && str <= 'Z')
+		return (0);
+	if (str >= 'a' && str <= 'z')
+		return (1);
+	if (str <= 47 || str >= 58 && str <= 64 || str >= 91 && str <= 96)
+		return (2);
+	if (str >= 123)
+		return (2);
+}
 
 char	*ft_strcapitalize(char *str)
 {
 	unsigned int	i;
 
 	i = 1;
-	if (str[0] >= 'a' && str[0] <= 'z')
+	if (a_c(str[0]) == 1)
 		str[0] -= 32;
 	while (str[i] != '\0')
 	{
-		if ((str[i - 1] < 47) && (str[i] >= 'a') && (str[i] <= 'z'))
+		if (a_c(str[i - 1]) == 2 && a_c(str[i]) == 1)
 			str[i] -= 32;
-		if ((str[i - 1] >= 'A') && (str[i - 1] <= 'Z'))
-		{
-			if ((str[i] >= 'A') && (str[i] <= 'Z'))
-				str[i] += 32;
-		}
-		if ((str[i - 1] >= 'a') && (str[i - 1] <= 'z'))
-		{
-			if ((str[i] >= 'A') && (str[i] <= 'Z'))
-				str[i] += 32;
-		}
+		if (a_c(str[i - 1]) == 0 && a_c(str[i]) == 0)
+			str[i] += 32;
+		if (a_c(str[i - 1]) == 1 && a_c(str[i]) == 0)
+			str[i] += 32;
 		i++;
 	}
 	return (str);
@@ -40,7 +46,7 @@ char	*ft_strcapitalize(char *str)
 
 int	main(void)
 {
-	char	str[]="les cacahUettes sOnt boNNes ? je crois";
+	char	str[]="les 42ca?ahUettes{sOnt boNNes ?je crois";
 
 	ft_strcapitalize(str);
 	printf("%s", str);
