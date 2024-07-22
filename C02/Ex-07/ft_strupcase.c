@@ -6,7 +6,7 @@
 /*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 14:01:33 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/21 14:14:59 by gpilet           ###   ########.fr       */
+/*   Updated: 2024/07/21 18:00:14 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ char	*ft_strupcase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		str[i] = str[i] - 32;
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			i++;
+		else
+			str[i] = str[i] - 32;
 		i++;
 	}
 	return (str);
