@@ -16,10 +16,12 @@ int	a_c(int str)
 		return (0);
 	if (str >= 'a' && str <= 'z')
 		return (1);
-	if (str <= 47 || str >= 58 && str <= 64 || str >= 91 && str <= 96)
+	if ((str <= 47 || str >= 58) && (str <= 64 || str >= 91) && str <= 96)
 		return (2);
 	if (str >= 123)
 		return (2);
+	else
+		return (-1);
 }
 
 char	*ft_strcapitalize(char *str)
