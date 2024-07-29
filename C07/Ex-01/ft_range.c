@@ -1,30 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:32:30 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/29 17:34:33 by gpilet           ###   ########.fr       */
+/*   Created: 2024/07/28 13:09:37 by gpilet            #+#    #+#             */
+/*   Updated: 2024/07/28 13:35:31 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdlib.h>
+
+int	*ft_range(int min, int max)
 {
+	int	*tab;
 	int	i;
 
 	i = 0;
-	while (str[i])
+	if (min >= max)
+		return (0);
+	tab = malloc(sizeof(int) * (max - min));
+	if (tab == 0)
+		return (0);
+	while (i <= (max - min))
+	{
+		tab[i] = min + i;
 		i++;
-	return (i);
+	}
+	return (tab);
 }
 
 /*#include <stdio.h>
-int	main()
-{
-	char	*str;
 
-	str = "cacahuette";
-	printf("%d", ft_strlen(str));
+int	main(void)
+{
+	int i=0;
+	int *tab=0;
+	int min=1;
+	int max=10;
+
+	tab=ft_range(min, max);
+	while (i < (max - min))
+	{
+		printf("%d\n", tab[i]);
+		i++;
+	}
 }*/

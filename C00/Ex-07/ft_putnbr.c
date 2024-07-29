@@ -1,30 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:32:30 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/29 17:34:33 by gpilet           ###   ########.fr       */
+/*   Created: 2024/07/29 14:29:21 by gpilet            #+#    #+#             */
+/*   Updated: 2024/07/29 14:32:47 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
 }
 
-/*#include <stdio.h>
-int	main()
+void	ft_putnbr(int nb)
 {
-	char	*str;
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb *= -1;
+	}
+	if (nb >= 0 && nb < 10)
+		ft_putchar(nb + '0');
+	else
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+}
 
-	str = "cacahuette";
-	printf("%d", ft_strlen(str));
+/*int	main(void)
+{
+	ft_putnbr(42);
 }*/

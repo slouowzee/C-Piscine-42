@@ -1,30 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:32:30 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/29 17:34:33 by gpilet           ###   ########.fr       */
+/*   Created: 2024/07/28 13:41:58 by gpilet            #+#    #+#             */
+/*   Updated: 2024/07/29 10:23:32 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdlib.h>
+
+int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	i;
+	int	*tmp;
 
 	i = 0;
-	while (str[i])
+	if (min >= max)
+	{
+		*range = NULL;
+		return (0);
+	}
+	tmp = malloc(sizeof(int) * (max - min));
+	if (tmp == NULL)
+		return (-1);
+	while (i <= (max - min))
+	{
+		tmp[i] = min + i;
 		i++;
-	return (i);
+	}
+	*range = tmp;
+	return (i - 1);
 }
 
 /*#include <stdio.h>
-int	main()
-{
-	char	*str;
 
-	str = "cacahuette";
-	printf("%d", ft_strlen(str));
+int	main(void)
+{
+	int *range;
+
+	printf("5:%d\n", ft_ultimate_range(&range, 0, 5));
 }*/

@@ -1,30 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 14:32:30 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/29 17:34:33 by gpilet           ###   ########.fr       */
+/*   Created: 2024/07/28 10:48:16 by gpilet            #+#    #+#             */
+/*   Updated: 2024/07/28 11:20:02 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdlib.h>
+
+int	ft_strlen(char *src)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (src[i])
 		i++;
 	return (i);
 }
 
-/*#include <stdio.h>
-int	main()
+char	*ft_strdup(char *src)
 {
-	char	*str;
+	int		i;
+	int		len;
+	char	*dup;
 
-	str = "cacahuette";
-	printf("%d", ft_strlen(str));
+	i = 0;
+	len = ft_strlen(src);
+	dup = (char *)malloc(sizeof(char) * (len + 1));
+	if (dup == NULL)
+		return (NULL);
+	while (i < len)
+	{
+		dup[i] = src[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
+}
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	printf("%s", ft_strdup("C'est moi wesh"));
 }*/
