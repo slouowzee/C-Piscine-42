@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: gpilet <gpilet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 14:18:33 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/22 14:39:08 by gpilet           ###   ########.fr       */
+/*   Updated: 2024/08/01 15:32:18 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
-
 /*#include <stdio.h>
 
 int	main(void)
