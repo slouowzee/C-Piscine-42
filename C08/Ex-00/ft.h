@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gpilet <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: gpilet <gpilet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 10:15:36 by gpilet            #+#    #+#             */
-/*   Updated: 2024/07/30 10:22:15 by gpilet           ###   ########.fr       */
+/*   Updated: 2024/08/05 13:49:18 by gpilet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,5 @@ void	ft_swap(int *a, int *b);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
 int		ft_strcmp(char *s1, char *s2);
+
 #endif
