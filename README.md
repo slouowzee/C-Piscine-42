@@ -1,5 +1,4 @@
 # Mon expérience à la piscine à 42:
-\
 Bonjour et bienvenue à vous, si vous êtes arriver ici, c'est que je vous ai envoyé le lien (ou pas) menant jusqu'à ce **répertoire**.  
 _Donc humainement je vais vous indiquer les bases à avoir avant de se jetter à l'eau !_  
 
@@ -7,7 +6,7 @@ _Donc humainement je vais vous indiquer les bases à avoir avant de se jetter à
 Durant votre piscine, vous serez sur différent postes de travail, ce seront éssentiellement des IMacs !  
 Mais il y a des choses à savoir dessus :  
 - Les IMacs sont boot sur un Ubuntu,
-- Il est stipulement interdit de les reboot / redemarrer,
+- Il est stipulement interdit de les reboot / redémarrer,
 - Donc vous aurew seulement à vous **LOG OUT**,
 - Les fichiers sont sauvegarder inter-sessions,
 - De même si vous subissez un freeze.
@@ -34,14 +33,14 @@ Vos semaines à la piscine se dérouleront comme suit :
 - Exam les vendredis, pensez à bien vous inscrire,
 - Rush les week-ends, de même, pensez bien à vous inscrire.
 
-**-> Comment se déroule les exams ?**
+**-> Comment se déroule les exams ?** \
 C'est 4H devant un PC à coder ^^.
 
-**-> Et pour les rushs ?**
+**-> Et pour les rushs ?** \
 C'est un travail à faire en groupe sur un weekend entier avec des sujets assez spéciaux...
 
 ## Quelques commandes de bases avec explications pour pouvoir flotter.
-Ce sont basiquement des commandes que vous apprendrez dans Shell00 mais les voicies pour pas voud perdre :
+Ce sont basiquement des commandes que vous apprendrez dans Shell00 mais les voicies pour ne pas vous perdre :
 ```
 cd -> se déplacer dans le terminal, vous pouvez vous aider de l'explorateur de fichier pour vous aider.
 mkdir -> créer un répertoire.
@@ -52,8 +51,9 @@ truncqte -> RTFM !
 vi / vim -> éditer un fichier, pernet aussi de coder en différent langages, assez pratique durant les exams.
 ```
 Je vous présentes à présent votre meilleur ami durant votre psicine : GIT !!!
-Si vous êtes sur ce github j'espère donc que vous savez ce qu'est git et github, sinon :
- > Google is your friend.
+Si vous êtes sur ce github j'espère donc que vous savez ce qu'est git et github, sinon : \
+ -> Google is your friend. \
+\
 Voici les commandes :
 ```
 git help -> très utile.
@@ -64,13 +64,13 @@ git push -> comme son nom l'indique, vous allez push votre fichier, il sera donc
 Voyez Git comme un drive, fin c'est un drive en quelques sortes. Vous pushez vos fichiers locaux sur une database.
 
 ## Maintenant, c'est l'heure des tips !
--> Le terminal de base est moche, pour plus de visibilité dedans je vous ramène sur le git de [Oh My ZSH !"](https://ohmyz.sh/). Il permet d'avoir une meilleur visibilité dans votre terminal et aussi de raccourcir quelques commandes chiantes :
+-> Le terminal de base est moche, pour plus de visibilité dedans je vous ramène sur le site de [Oh My ZSH !"](https://ohmyz.sh/). Il permet d'avoir une meilleur visibilité dans votre terminal et aussi de raccourcir quelques commandes chiantes :
 ```
 cd .. -> .. (retour en arrière)
 cd temp/ ->temp/ (aller à un certains dossiers)
 etc...
 ```
--> Pour votre IDE de codage, vous pourrez utiliser en utiliser 3 qui sont déjà préinstqller : VS-Code, Vim ou le bloc note...
+-> Pour votre IDE de codage, vous pourrez utiliser en utiliser 3 qui sont déjà préinstaller : VS-Code, Vim ou le bloc note...
 J'ai personnellement utilisé vim en exam et VS-Code dans mes days.
 Pour votre VS-Code vous devrez le personnaliser, mettre des extensiosn etc, appart si vous vous connectez vous pourrez avoir vos données de VS-Code synchroniser.
 Pour Vin pas besoins.
