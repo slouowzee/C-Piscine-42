@@ -1,4 +1,4 @@
-# Mon expérience à la piscine chez 42 Perpignan :
+# Mon expérience à la piscine à 42:
 \
 Bonjour et bienvenue à vous, si vous êtes arriver ici, c'est que je vous ai envoyé le lien (ou pas) menant jusqu'à ce **répertoire**.  
 _Donc humainement je vais vous indiquer les bases à avoir avant de se jetter à l'eau !_  
