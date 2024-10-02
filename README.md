@@ -2,9 +2,6 @@
 Bonjour et bienvenue à vous, si vous êtes arriver ici, c'est que je vous ai envoyé le lien (ou pas) menant jusqu'à ce **répertoire**.  
 _Donc humainement je vais vous indiquer les bases à avoir avant de se jetter à l'eau !_  
 
-## Voici où je me suis arrêter en terme de niveau :
-![niveau](https://private-user-images.githubusercontent.com/175410319/356887176-18e5e344-1f33-4389-b70b-37076cf44817.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjMzODkxNDIsIm5iZiI6MTcyMzM4ODg0MiwicGF0aCI6Ii8xNzU0MTAzMTkvMzU2ODg3MTc2LTE4ZTVlMzQ0LTFmMzMtNDM4OS1iNzBiLTM3MDc2Y2Y0NDgxNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxMVQxNTA3MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMjhkODQ0MTAxNGZmYWVlNTBiZmI3NjZkODY3ODliM2ZmNGNkNjE1MWE0MmUyNDBkN2VhNzU3ZDIzMDcxOTQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.65TRpLMNCfKvnhL7VW3EKSsT9TfqiwiVdhotTgFqe2c)
-
 ## Pour bien commencer : La base de la base.
 Durant votre piscine, vous serez sur différent postes de travail, ce seront éssentiellement des IMacs !  
 Mais il y a des choses à savoir dessus :  
